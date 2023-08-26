@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rich_texts",
+  "info": {
+    "singularName": "rich-text",
+    "pluralName": "rich-texts",
+    "displayName": "RichText",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 20,
+      "minLength": 5
+    },
+    "editCode": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 3
+    },
+    "password": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

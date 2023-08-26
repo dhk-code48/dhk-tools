@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dhk_files",
+  "info": {
+    "singularName": "dhk-file",
+    "pluralName": "dhk-files",
+    "displayName": "DhkFile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string",
+      "maxLength": 20,
+      "minLength": 3,
+      "required": true
+    },
+    "fileId": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
